@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  /* COLORS */
+  --primary-one: hsl(215, 51%, 70%);
+  --primary-two: hsl(178, 100%, 50%);
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --white: hsl(0, 0%, 100%);
+
+  /* FONT SIZES */
+  --font-body-size: 18px;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: var(--main-bg);
+}
+
+.flex {
+  display: flex;
+}
+
+.main-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: inline-block;
+  flex-direction: column;
+  background-color: var(--card-bg);
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+}
+
+.img {
+  position: relative;
+}
+
+.img img {
+  width: 280px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.img-overlay {
+  position: absolute;
+  height: 280px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  border-radius: 10px;
+  opacity: 0;
+}
+
+.img-overlay img {
+  transform: scale(0.15);
+}
+
+.img-overlay:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.main-content h1 {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.main-content h1:hover {
+  cursor: pointer;
+  color: var(--primary-two);
+}
+
+.main-content p {
+  color: var(--primary-one);
+  font-weight: 300;
+}
+
+.eth-container {
+  justify-content: space-between;
+}
+.eth-container p:nth-of-type(1) {
+  color: var(--primary-two);
+  font-weight: 600;
+}
+.eth-container p:nth-of-type(2) {
+  color: var(--primary-one);
+  font-weight: 400;
+}
+.line {
+  height: 1px;
+  background-color: hsla(215, 51%, 70%, 0.4);
+}
+
+.eth-container span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.creator-container {
+  margin-top: 10px;
+  align-items: center;
+}
+
+.creator-container p {
+  color: var(--primary-one);
+}
+
+.creator-container span:nth-of-type(1) {
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+.creator-container span:nth-of-type(2) {
+  color: var(--white);
+}
+.creator-container span:nth-of-type(2):hover {
+  cursor: pointer;
+  color: var(--primary-two);
+}
+.creator-container img {
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.attribution,
+.attribution a {
+  color: var(--white);
+  text-decoration: none;
+}
